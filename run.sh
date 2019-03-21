@@ -7,4 +7,4 @@
 # This file executes the docker-compose file to start the quantum virtual machine as well as the
 # quantum application.
 
-docker-compose up --rm qvirtual_machine qapplication
+docker-compose up --build qvirtual_machine qapplication

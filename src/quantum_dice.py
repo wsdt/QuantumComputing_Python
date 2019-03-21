@@ -21,7 +21,6 @@ roll_dice = dice.measure_all()
 
 # Execute
 result = qm.run(roll_dice)
-print("HHH "+str(result))
 
 # Print a readable result
 dice_value = reduce(lambda x, y: 2*x + y, result[0], 0)+1
