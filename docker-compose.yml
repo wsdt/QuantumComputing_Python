@@ -1,0 +1,24 @@
+# (c) Riedl A. Kevin, 2019
+# https://github.com/wsdt
+# https://www.linkedin.com/in/kevin-riedl-947219158
+
+# This file can be executed via:
+#     docker-compose up --rm qvirtual_machine qapplication
+# or you can just use the provided shell file -> ./run.sh which contains the same command.
+
+version: '3'
+services:
+  qvirtual_machine:
+    command: "-S"
+    stdin_open: true
+    tty: true
+    container_name: qvm
+    image: rigetti/qvm
+    ports:
+      - 5000:5000
+  qapplication:
+    container_name: qapp
+    build: .
+    network_mode: host
+    depends_on:
+      - qvirtual_machine
