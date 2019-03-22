@@ -8,7 +8,7 @@
 
 version: '3'
 services:
-  qvirtual_machine:
+  rigetti_qvm:
     command: "-S"
     stdin_open: true
     tty: true
@@ -16,9 +16,16 @@ services:
     image: rigetti/qvm
     ports:
       - 5000:5000
-  qapplication:
+  rigetti_qapp:
     container_name: qapp
-    build: .
+    build:
+      dockerfile: Dockerfile.rigetti
+      context: .
     network_mode: host
     depends_on:
-      - qvirtual_machine
+      - rigetti_qvm
+  qiskit_qapp:
+    container_name: qis_app
+    build:
+      dockerfile: Dockerfile.qiskit
+      context: .

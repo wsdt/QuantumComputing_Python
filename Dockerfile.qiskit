@@ -6,7 +6,9 @@ FROM continuumio/miniconda3
 MAINTAINER Riedl A. Kevin
 ARG BASE_PATH=./qapp
 
-RUN conda install -c rigetti pyquil
+
+# Needed for true_random_sring_generator.py (you can comment that line if you don't use qiskit)
+RUN apt-get update && apt-get -y install gcc && pip install qiskit qiskit-aqua
 
 # Copy source files into image
 COPY ./src $BASE_PATH/src
@@ -15,4 +17,4 @@ ENV PATH=$PATH:$BASE_PATH
 ENV PYTHONPATH $BASE_PATH
 
 # Execute main-file
-CMD python /qapp/src/qbit_love.py
+CMD python /qapp/src/quantum_true_randomstring_generator.py
