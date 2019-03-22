@@ -4,10 +4,12 @@
 
 # Inspired from https://github.com/robbiemccorkell/quantum-random-number
 
-import math, argparse, warnings
+from conf.general_conf import QISKIT_RAND_STR_LEN
+import math
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute, BasicAer
 from conf.controllers.c_qiskit_conf import get_quantum_machine
 
+# Local constant for maximum qubits to use
 MAX_QUBITS = 5
 
 
@@ -83,5 +85,5 @@ def random_str(length=10):
 
 
 # Generate random string of specific length and print it afterwards
-result = random_str(30)
+result = random_str(QISKIT_RAND_STR_LEN)
 print(result)

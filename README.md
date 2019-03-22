@@ -3,7 +3,12 @@
 [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
 [![Github license](https://github.com/wsdt/QuantumComputing_Python.svg)](https://github.com/wsdt/QuantumComputing_Python/blob/master/LICENSE)
 
-I basically just played around. 
+I basically just played around.
+
+Please note that the quantum virtual machine is **NOT** a real quantum computer and won't generate _true_ random strings. 
+
+To get truly random strings you should set the _USE_REAL_COMP_-Constant in [general conf](https://github.com/wsdt/QuantumComputing_Python/blob/master/conf/general_conf.py)
+and add an API token for the IBM cloud by setting the constant _QISKIT_IBM_TOKEN_.
 
 ## Programs
 This repo contains following programs. 
