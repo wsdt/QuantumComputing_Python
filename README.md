@@ -1,7 +1,8 @@
 # Quantum Computing with Python
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) 
 [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
-[![Github license](https://github.com/wsdt/QuantumComputing_Python.svg)](https://github.com/wsdt/QuantumComputing_Python/blob/master/LICENSE)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
+[![GitHub license](https://img.shields.io/github/license/wsdt/QuantumComputing_Python.svg)](https://github.com/wsdt/QuantumComputing_Python/blob/master/LICENSE) 
 
 I basically just played around.
 
