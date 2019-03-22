@@ -8,7 +8,7 @@
 from pyquil.quil import Program
 from pyquil.gates import H
 from functools import reduce
-from conf.controllers.c_general_conf import get_quantum_machine
+from conf.controllers.c_rigetti_conf import get_quantum_machine
 
 # Fetches quantum machine for current set setting (e.g. real quantum computer or vm)
 qm = get_quantum_machine()

@@ -3,7 +3,7 @@
 # https://www.linkedin.com/in/kevin-riedl-947219158
 
 import math, argparse, warnings
-from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute
+from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute, BasicAer
 
 MAX_QUBITS = 5
 
@@ -26,7 +26,8 @@ def random_int(max, remote=False):
     bits = ''
     n_bits = num_bits(max-1)
     register_sizes = get_register_sizes(n_bits, MAX_QUBITS)
-    backend = "ibmqx4" if remote else "local_qasm_simulator"
+    backend = BasicAer.get_backend("qasm_simulator")
+    # backend = "ibmqx4" if remote else "local_qasm_simulator"
 
     for x in register_sizes:
         q = QuantumRegister(x)
