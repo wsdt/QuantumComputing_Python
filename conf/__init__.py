@@ -1,1 +1,1 @@
-from .rigetti_conf import *
+from .general_conf import *

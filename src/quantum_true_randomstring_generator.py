@@ -6,6 +6,7 @@
 
 import math, argparse, warnings
 from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister, execute, BasicAer
+from conf.controllers.c_qiskit_conf import get_quantum_machine
 
 MAX_QUBITS = 5
 
@@ -43,7 +44,7 @@ def random_int(max_bound):
     bits = ''
     n_bits = num_bits(max_bound - 1)
     register_sizes = get_register_sizes(n_bits)
-    backend = BasicAer.get_backend("qasm_simulator")
+    backend = get_quantum_machine()
 
     for x in register_sizes:
         q = QuantumRegister(x)
