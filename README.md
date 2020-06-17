@@ -1,7 +1,4 @@
-# Quantum Computing with Python [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) 
-[![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) 
-[![GitHub license](https://img.shields.io/github/license/wsdt/QuantumComputing_Python.svg)](https://github.com/wsdt/QuantumComputing_Python/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/Donate-Pay%20me%20a%20coffee-3cf)](https://github.com/wsdt/Global/wiki/Donation) [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kevin.riedl.privat%40gmail.com)
+# Quantum Computing with Python [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/wsdt/QuantumComputing_Python.svg)](https://github.com/wsdt/QuantumComputing_Python/blob/master/LICENSE) [![Donate](https://img.shields.io/badge/Donate-Pay%20me%20a%20coffee-3cf)](https://github.com/wsdt/Global/wiki/Donation) [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kevin.riedl.privat%40gmail.com)
 
 I basically just played around.
 
